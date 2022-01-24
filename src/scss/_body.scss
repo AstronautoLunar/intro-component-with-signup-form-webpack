@@ -7,4 +7,15 @@
     background-size: cover;
     background-position: center;
     background-color: var(--red);
+
+    .section-text {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    section {
+        width: 50%;
+        height: 100%;
+    }
 }

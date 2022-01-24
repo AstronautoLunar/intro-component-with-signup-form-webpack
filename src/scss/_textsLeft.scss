@@ -1,0 +1,26 @@
+.article {
+    width: 500px;
+
+    margin-right: 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 42px;
+
+        margin-bottom: 24px;
+
+        line-height: 45px;
+    }
+
+    h1,
+    p
+    {
+        color: var(--white);
+
+        font-family: Poppins
+    }
+}
