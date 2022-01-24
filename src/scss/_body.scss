@@ -1,21 +1,25 @@
-#main {
-    width: 100%;
-    height: 100vh;
-
+body {
+    
     background-image: url(../assets/bg-intro-desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-color: var(--red);
+    
+    #main {
+        width: 100%;
+        height: 100vh;
+        
+        .section-text {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
 
-    .section-text {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        section {
+            width: 50%;
+            height: 100%;
+        }
     }
 
-    section {
-        width: 50%;
-        height: 100%;
-    }
 }
