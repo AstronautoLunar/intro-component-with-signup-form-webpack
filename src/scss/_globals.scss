@@ -1,0 +1,33 @@
+:root {
+    // Primary Colors
+    --red: rgb(255, 122, 122);
+    --green: hsl(154, 59%, 51%);
+
+    // Accent Colors
+    --blue: hsl(248, 32%, 49%);
+
+    // Neutral Colors
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+
+    // Others Colors
+    --link: hsl(228, 45%, 44%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+
+    a { 
+        color: var(--link); 
+    }
+}
