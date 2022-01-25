@@ -1,5 +1,5 @@
 body {
-    
+
     background-image: url(../assets/bg-intro-desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,17 +8,16 @@ body {
     
     #main {
         width: 100%;
-        height: 100vh;
+        height: 95vh;
         
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         .section-text {
             display: flex;
             justify-content: flex-end;
             align-items: center;
-        }
-
-        section {
-            width: 50%;
-            height: 100%;
         }
     }
 
