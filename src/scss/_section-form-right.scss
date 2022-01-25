@@ -35,5 +35,45 @@
                 border-bottom-right-radius: 10px;
             }
         }
+
+        #form {
+            width: 100%;
+
+            padding: 24px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            background-color: var(--white);
+
+            .input {
+                width: 100%;
+
+                margin-bottom: 16px;
+
+                padding: 16px 32px;
+
+                outline: none;
+                border: 1px solid var(--dark-blue-alpha);
+                
+                transition: border 500ms;
+
+                border-radius: 5px;
+
+                &::placeholder {
+                    color: var(--dark-blue);
+                }
+                
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+                
+                &:focus {
+                    border: 1px solid var(--dark-blue);
+                }
+            }
+        }
     }
 }
