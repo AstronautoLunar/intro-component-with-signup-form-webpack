@@ -1,3 +1,6 @@
+$borderRadiusButtonFreeDay: 10px;
+$borderRadiusButtonSendForm: 5px;
+
 .section-form {
     display: flex;
     justify-content: flex-start;
@@ -22,17 +25,26 @@
     
                 padding: 16px 80px;
     
-                border-radius: 10px;
+                border-radius: $borderRadiusButtonFreeDay;
+                
+                position: relative;
+
+                z-index: 3;
             }
 
             .shadow {
                 background-color: var(--blue-alpha);
 
                 width: 100%;
-                height: 10px;
+                height: 20px;
 
-                border-bottom-left-radius: 10px;
-                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: $borderRadiusButtonFreeDay;
+                border-bottom-right-radius: $borderRadiusButtonFreeDay;
+
+                position: relative;
+                bottom: 10px;
+
+                z-index: 1;
             }
         }
 
@@ -66,12 +78,49 @@
                     color: var(--dark-blue);
                 }
                 
-                &:last-of-type {
-                    margin-bottom: 0;
-                }
-                
                 &:focus {
                     border: 1px solid var(--dark-blue);
+                }
+            }
+
+            #area-button-send-form {
+                width: 100%;
+
+                position: relative;
+
+                #button-send-form {
+                    background-color: var(--green);
+    
+                    padding: 16px 80px;
+    
+                    width: 100%;
+
+                    margin-bottom: 5px;
+    
+                    text-align: center;
+    
+                    color: var(--white);
+    
+                    border-radius: $borderRadiusButtonSendForm;
+
+                    position: relative;
+
+                    z-index: 3;
+                }
+
+                .shadow {
+                    width: 100%;
+                    height: 15px;
+
+                    background-color: var(--green-dark);
+
+                    position: absolute;
+                    bottom: 0px;
+
+                    border-bottom-left-radius: $borderRadiusButtonSendForm;
+                    border-bottom-right-radius: $borderRadiusButtonSendForm;
+
+                    z-index: 1;
                 }
             }
         }
