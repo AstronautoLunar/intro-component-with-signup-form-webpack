@@ -12,6 +12,8 @@ $borderRadiusButtonSendForm: 5px;
         justify-content: center;
         align-items: center;
 
+        margin-left: 24px;
+
         .area-button {
 
             .button {
@@ -51,7 +53,9 @@ $borderRadiusButtonSendForm: 5px;
         #form {
             width: 100%;
 
-            padding: 24px;
+            padding: 32px;
+
+            border-radius: 8.5px;
 
             display: flex;
             flex-direction: column;
@@ -68,7 +72,7 @@ $borderRadiusButtonSendForm: 5px;
                 padding: 16px 32px;
 
                 outline: none;
-                border: 1px solid var(--dark-blue-alpha);
+                border: 1px solid var(--dark-blue-alpha-1);
                 
                 transition: border 500ms;
 
@@ -121,6 +125,18 @@ $borderRadiusButtonSendForm: 5px;
                     border-bottom-right-radius: $borderRadiusButtonSendForm;
 
                     z-index: 1;
+                }
+            }
+
+            .text-terms-service {
+                font-size: 0.65rem;
+
+                margin-top: 16px;
+
+                color: var(--dark-blue-alpha-2);
+
+                .emphasis {
+                    color: var(--red);
                 }
             }
         }
