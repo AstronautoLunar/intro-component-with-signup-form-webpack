@@ -1,0 +1,1 @@
+export const areaInputs = window.document.querySelectorAll(".area-input") as NodeListOf<HTMLElement>;

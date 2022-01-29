@@ -64,34 +64,38 @@ $borderRadiusButtonSendForm: 5px;
 
             background-color: var(--white);
 
-            .input {
-                width: 100%;
-
-                margin-bottom: 16px;
-
-                padding: 16px 32px;
-
-                outline: none;
+            .area-input {
                 border: 1px solid var(--dark-blue-alpha-1);
                 
                 transition: border 500ms;
 
                 border-radius: 5px;
-
+                
                 &::placeholder {
                     color: var(--dark-blue);
                 }
                 
-                &:focus {
-                    border: 1px solid var(--dark-blue);
+                margin-bottom: 16px;
+                
+                width: 100%;
+                
+                .input {
+                    width: 100%;
+                    
+                    padding: 16px 32px;
+                    
+                    border-radius: 5px;
+                    
+                    outline: none;
+                    border: none;
                 }
             }
-
+            
             #area-button-send-form {
                 width: 100%;
-
+                
                 position: relative;
-
+                
                 #button-send-form {
                     background-color: var(--green);
     
