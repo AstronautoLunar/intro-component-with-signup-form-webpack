@@ -1,1 +1,1 @@
-export const areaInputs = window.document.querySelectorAll(".area-input") as NodeListOf<HTMLElement>;
+export const areaInputs = window.document.querySelectorAll(".secure-area-input") as NodeListOf<HTMLElement>;

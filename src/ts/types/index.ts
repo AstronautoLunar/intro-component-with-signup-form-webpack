@@ -1,5 +1,9 @@
-import { OptionsBorderProps } from "./FocusBorderTypes";
+import { 
+    OptionsBorderProps,
+    TypeInputProps
+} from "./FocusBorderTypes";
 
 export {
-    OptionsBorderProps
+    OptionsBorderProps,
+    TypeInputProps
 }

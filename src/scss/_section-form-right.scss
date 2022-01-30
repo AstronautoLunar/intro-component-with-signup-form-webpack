@@ -64,30 +64,56 @@ $borderRadiusButtonSendForm: 5px;
 
             background-color: var(--white);
 
-            .area-input {
-                border: 1px solid var(--dark-blue-alpha-1);
-                
-                transition: border 500ms;
+            .secure-area-input {
+                width: 100%;
 
-                border-radius: 5px;
-                
-                &::placeholder {
-                    color: var(--dark-blue);
-                }
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
                 
                 margin-bottom: 16px;
                 
-                width: 100%;
-                
-                .input {
-                    width: 100%;
-                    
-                    padding: 16px 32px;
-                    
+                .area-input {
+                    border: 1px solid var(--dark-blue-alpha-1);
                     border-radius: 5px;
                     
-                    outline: none;
-                    border: none;
+                    &::placeholder {
+                        color: var(--dark-blue);
+                    }
+                    
+                    margin-bottom: 8px;
+
+                    width: 100%;
+    
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    .input {
+                        flex: 1;
+    
+                        padding: 16px 32px;
+                        
+                        border-radius: 5px;
+                        
+                        outline: none;
+                        border: none;
+                    }
+    
+                    .icon-error {
+                        margin-right: 16px;
+    
+                        opacity: 0;
+                    }
+                }
+
+                .message-error-input {
+                    color: var(--error-message);
+
+                    font-size: 0.8rem;
+
+                    font-style: italic;
                 }
             }
             
