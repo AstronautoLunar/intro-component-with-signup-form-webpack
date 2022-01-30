@@ -65,13 +65,31 @@ class FocusBorder {
                         default:
                     }
 
+                    input.style.color = "#FF7979";
+
                     areaInput.style.border = `${width} ${style} #FF7979`;
+                } else if (typeInput === "email") {
+                    const isPassed = this.validateEmail(input);
+
+                    if(!isPassed) {
+                        iconError.style.opacity = "1";
+                        messageError.innerText = "Looks like this is not an email";
+                        input.style.color = "#FF7979";
+                        areaInput.style.border = `${width} ${style} #FF7979`;
+                    } else {
+                        iconError.style.opacity = "";
+                        messageError.innerText = "";
+                        input.style.color = "";
+                        areaInput.style.border = ""
+                    }
                 } else {
-                    iconError.style.opacity = "0";
+                    iconError.style.opacity = "";
+
+                    input.style.color = "";
 
                     messageError.innerText = "";
 
-                    areaInput.style.border = `${width} ${style} ${color}`;
+                    areaInput.style.border = "";
                 }
             }
 
@@ -82,16 +100,23 @@ class FocusBorder {
             input.addEventListener("focus", () => {
                 areaInput.style.border = `${width} ${style} ${color}`;
 
-                input.addEventListener("input", validateInput);
+                input.addEventListener("change", validateInput);
             }, true);
 
             input.addEventListener("blur", () => {
-                areaInput.style.border = "";
-
                 validateInput();
-                input.addEventListener("input", validateInput);
             }, true);
         })
+    }
+
+    private validateEmail(inputEmail: HTMLInputElement): boolean {
+        const value = inputEmail.value;
+        const arrayValue = value.split("");
+        const isAtSignExists = arrayValue.includes("@");
+        const pointComValue = value.substring(value.length - 4, value.length);
+        const isPointComExists = pointComValue === ".com";
+
+        return isAtSignExists && isPointComExists;
     }
 }
 
