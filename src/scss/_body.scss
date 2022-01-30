@@ -13,11 +13,19 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    
+    @media screen and (max-width: 1118px) {
+        #main {
+            flex-direction: column;
+            
+            height: auto;
 
-        .section-text {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        #footer {
+            margin-bottom: 40px;
         }
     }
 

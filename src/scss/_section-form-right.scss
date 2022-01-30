@@ -31,6 +31,8 @@ $borderRadiusButtonSendForm: 5px;
                 
                 position: relative;
 
+                text-align: center;
+
                 z-index: 3;
             }
 
@@ -174,6 +176,52 @@ $borderRadiusButtonSendForm: 5px;
 
                 .emphasis {
                     color: var(--red);
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1118px) {
+        .area-form {
+            margin-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 538px) {
+    .section-form {
+        margin: 0 24px;
+
+        .area-form {
+
+            .area-button {
+                
+                .button {
+                    font-size: 13px;
+
+                    padding: 16px 40px;
+                }
+            }
+
+            #form {
+
+                .secure-area-input {
+
+                    .area-input {
+                        
+                        .input {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                #area-button-send-form {
+
+                    #button-send-form {
+                        font-size: 13px;
+
+                        padding: 16px 40px;
+                    }
                 }
             }
         }
